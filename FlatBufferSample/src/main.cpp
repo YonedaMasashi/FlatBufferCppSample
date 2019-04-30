@@ -103,7 +103,7 @@ int main() {
 	auto loadOk = MyLoadFile("monsterdata.bin", true, &loadData);
 	auto monster_2 = GetMonster(loadData.c_str());
 
-	std::cout << "hp : " << monster_2->hp() << std::endl;            // `80`
+	std::cout << "hp : " << monster_2->hp() << std::endl;            // `300`
 	std::cout << "mana : " << monster_2->mana() << std::endl;        // default value of `150`
-	std::cout << "name : " << monster_2->name()->c_str() << std::endl;        // "MyMonster"
+	std::cout << "name : " << monster_2->name()->c_str() << std::endl;        // "Orc"
 }
